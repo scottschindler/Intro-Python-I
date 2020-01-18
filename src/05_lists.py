@@ -11,15 +11,18 @@ print(x.append(4))
 
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
 # YOUR CODE HERE
+x.extend(y)
+print(x)
 print(x + y)
 
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE
 print(x + y[1:])
+x.remove(8)
 
 # Change x so that it is [1, 2, 3, 4, 9, 99, 10]
 # YOUR CODE HERE
-x.extend((4,8,88))
+x.insert(-1,99)
 print(x)
 
 # Print the length of list x
