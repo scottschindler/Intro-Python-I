@@ -5,6 +5,8 @@ https://docs.python.org/3.6/library/calendar.html
 
 Write a program that accepts user input of the form
   `14_cal.py month [year]`
+
+
 and does the following:
  - If the user doesn't specify any input, your program should
    print the calendar for the current month. The 'datetime'
@@ -22,3 +24,11 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+month, year = input("Enter a month and year: ").split(",")
+if not month or year:
+  print('you need to enter something!')
+
+
+
+
